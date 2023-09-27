@@ -26,3 +26,24 @@ From Alphabet Soup’s business team, you have received a CSV containing more th
 
 * IS_SUCCESSFUL—Was the money used effectively
 
+## Report
+
+### Overview
+The purpose of this analysis is to create a model that can predict wether an applicant will be successful or not after recieving a funding from Alphabet Soup based on data from the 34,000 organizations Alphabet has previouslt funded. 
+### Results
+* **Target Variable**:
+  * IS_SUCCESSFUL
+* **Features**:
+  * AFFILIATION
+  * CLASSIFICATION
+  * USE_CASE
+  * ORGANIZATION
+  * STATUS
+  * INCOME_AMT
+  * ASK_AMT
+* **Removed Features**:
+  * EIN & NAME - Both of these columns are ID columns that are unique to each organization and will not provide any beneficial insight into the success of the organization after funding 
+
+### Summary
+
+### Suggestion
