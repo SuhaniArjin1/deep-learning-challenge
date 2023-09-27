@@ -42,8 +42,33 @@ The purpose of this analysis is to create a model that can predict wether an app
   * INCOME_AMT
   * ASK_AMT
 * **Removed Features**:
-  * EIN & NAME - Both of these columns are ID columns that are unique to each organization and will not provide any beneficial insight into the success of the organization after funding 
+  * EIN & NAME - Both of these columns are ID columns that are unique to each organization
 
+#### Model
+* Input Layer:
+  * 128 neurons
+  * Activation function: ReLU
+* Hidden Layer 1:
+  * 64 neurons
+  * Activation function: ReLU
+* Hidden Layer 2:
+  * 32 neurons
+  * Activation function: ReLU
+* Hidden Layer 3:
+  * 16 neurons
+  * Activation function: ReLU
+* Output Layer:
+  * 1 neurons
+  * Activation function: Sigmoid
+
+#### Optimization
+Several changes were made in attempt to increase the accuracy of the model.
+1. Number of epochs was increase from 50 to 100
+2. Train test split was altered decreasing the test size from 25% to 20%
+3. Two hidden layers were added 
+4. Increase number of neurons in each layer form 16,8,1 to 128,64,32,16,1
+The accuracy reached 72.46%
 ### Summary
 
-### Suggestion
+#### Suggestion
+A different model that could be used to solve this problem would be random forest. I believe a random forest model can provide a deeper insight into the relative influence of each feature on the success of an organization. 
